@@ -3,120 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fireforce Massimo Dog Training</title>
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}  <style>
+  <title>Fireforce - Home</title>
+  <style>
     body {
-      margin: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-    }
-
-    .hero {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 30px 20px 10px;
+      padding: 20px;
     }
 
     .hero img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
     }
 
     .menu {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       gap: 15px;
-      padding: 20px 10px;
-      background-color: #111;
-      border-top: 2px solid #c00;
-      border-bottom: 2px solid #c00;
+      margin-top: 30px;
     }
 
     .menu a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      padding: 12px 18px;
-      border-radius: 6px;
+      padding: 15px;
       background-color: #cc0000;
-      transition: background-color 0.3s ease;
-      font-size: 16px;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s;
     }
 
     .menu a:hover {
       background-color: #ff3333;
     }
-
-    @media screen and (max-width: 480px) {
-      .menu a {
-        flex: 1 1 100%;
-        text-align: center;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <!-- LOGO A TUTTO SCHERMO -->
   <div class="hero">
-    <img src="logo.jpg" alt="Fireforce Massimo Dog Training">
+    <img src="logo.jpg" alt="Fireforce Massimo Dog Trainer">
   </div>
 
-  <!-- MENU -->
   <nav class="menu">
-  <a href="#servizi">Servizi</a>
-  <a href="#galleria">Galleria</a>
-  <a href="https://wa.me/393420651885" target="_blank">Contattaci su WhatsApp</a>
-  <a href="https://www.google.com/maps/search/?api=1&query=Bagheria+Caltanissetta" target="_blank">Apri Mappa</a>
-</nav>
-<!-- Sezione Servizi -->
-<section id="servizi">
-  <h2>Servizi</h2>
-  <p>Offriamo addestramento base e avanzato per cani di tutte le età, correzione comportamentale, socializzazione, obedience, e altro.</p>
-</section>
+    <a href="servizi.html">Servizi</a>
+    <a href="galleria.html">Galleria</a>
+    <a href="contatti.html">Contattaci su WhatsApp</a>
+    <a href="mappa.html">Apri Mappa</a>
+  </nav>
 
-<!-- Sezione Galleria -->
-<section id="galleria">
-  <h2>Galleria</h2>
-  <div class="gallery">
-    <img src="foto1.jpg" alt="Cane in addestramento">
-    <img src="foto2.jpg" alt="Esercizio di obbedienza">
-    <img src="foto3.jpg" alt="Momento di gioco">
-  </div>
-</section>
-
-<!-- Sezione Contatti -->
-<section id="contatti">
-  <h2>Contatti</h2>
-  <p>📞 Telefono: <strong>3420651885</strong></p>
-  <p>📍 Sedi: <strong>Caltanissetta</strong> e <strong>Bagheria</strong></p>
-</section>
-
-<!-- Sezione Mappa -->
-<section id="mappa">
-  <h2>Mappa</h2>
-  <p>Presto inseriremo qui una mappa interattiva per aiutarti a trovarci facilmente.</p>
-</section>
 </body>
 </html>
