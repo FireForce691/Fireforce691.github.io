@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fireforce Massimo</title>
+
   <style>
-   .hero {
-  position: relative;
-  overflow: hidden;
-}
+    /* Sfocatura sotto il logo */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+    }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(8px);
-  background: rgba(0, 0, 0, 0.3); /* semi-trasparente */
-  z-index: 1;
-}
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
 
-.hero img {
-  width: 100%;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-} body {
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: auto;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
       background-color: black;
       color: white;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
+
+    .menu {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 400px;
+    }
+
     .menu a {
       display: block;
-      margin: 15px auto;
+      margin: 12px auto;
       padding: 15px;
       background-color: #cc0000;
       color: white;
       text-decoration: none;
-      width: 80%;
-      max-width: 300px;
       border-radius: 8px;
       font-size: 18px;
+      transition: background-color 0.3s;
     }
+
     .menu a:hover {
       background-color: #ff3333;
+    }
+
+    /* Mobile optimization */
+    @media screen and (max-width: 480px) {
+      .menu a {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO -->
+  <!-- LOGO CON SFONDO SFUMATO -->
   <div class="hero">
-    <img src="logo.jpg" alt="Fireforce Massimo" width="80%">
+    <img src="logo.jpg" alt="Fireforce Massimo">
   </div>
 
   <!-- MENU -->
