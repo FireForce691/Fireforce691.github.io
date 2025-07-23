@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Servizi - Fireforce</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servizi</title>
   <style>
-    body { background: black; color: white; font-family: Arial; padding: 20px; }
-    a { color: red; }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 25px;
+      background-color: #cc0000;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #e60000;
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 24px; }
+      p { font-size: 18px; }
+      .back-button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    }
   </style>
 </head>
 <body>
+
   <h1>Servizi</h1>
-  <p>Offriamo addestramento base e avanzato per cani di tutte le età, correzione comportamentale, socializzazione, obedience e altro.</p>
-  <p><a href="index.html">← Torna alla Home</a></p>
+  <p>Offriamo addestramento base e avanzato per cani di tutte le età,<br>
+     correzione comportamentale, socializzazione, obedience e altro.</p>
+
+  <a href="index.html" class="back-button">← Torna alla Home</a>
+
 </body>
 </html>
