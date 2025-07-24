@@ -69,6 +69,34 @@
 
 .menu {
   margin-top: 0; /* Elimina spazio sopra i pulsanti */
+}/* Lightbox semplice */
+.lightbox img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lightbox img:hover {
+  transform: scale(1.02);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
   </style>
 </head>
